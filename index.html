@@ -26,10 +26,10 @@
   <!-- Add your site or application content here -->
   <header>
     <div class="content-wrapper">
-      <a href="#">
+      <figure class="main-logo">
         <img src="img/logo.png" alt="FiberSonic logo">
-      </a>
-      <nav>
+      </figure>
+      <nav class="nav">
         <a href="#">
           <img src="img/phone-icon-blue.png" alt="phone icon">
         </a>
@@ -51,12 +51,13 @@
           <p>Coming Soon:</p>
           <h1>Homegrown GIG speed Internet</h1>
         </div>
-        <a href="#">
-          <button type="button" name="show-interest-today" class="left-btn">Show Interest Today</button>
-        </a>
-        <a href="#">
-          <button type="button" name="show-interest-today-icon" class="right-btn"> <img src="img/pill-btn-logo.png" alt="small lightning bolt logo"> </button>
-        </a>
+
+        <div class="pill-btn">
+          <ul>
+            <li class="left-btn"><a href="#">Show Interest Today</a> </li>
+            <li class="right-btn"><a href="#"><img src="img/pill-btn-logo.png" alt="small lightning bolt logo"></a></li>
+          </ul>
+        </div><!-- end of .pill-btn -->
       </div>
     </section><!-- end .hero section -->
 
@@ -66,19 +67,19 @@
           <img src="img/star-icon.png" alt="Star Icon">
           <h2>Enjoy All your Favorites</h2>
           <p>All the programs you enjoy watching — including local stations — are available without a cable box. (And without cable company bills!) Watch your favorite movies and shows without any buffering or glitches. </p>
-          <a href="#"><p>More about chord cutting &rarr;</p></a>
+          <p class="more-info"><a href="#">More about chord cutting &rarr;</a></p>
         </div>
         <div class="box2">
           <img src="img/lightbulb-icon.png" alt="Lightbulb icon">
           <h2>Our Homes Are Getting Smarter</h2>
           <p>From smart speakers to remote garage door controls to smart thermostats, we are connected to our home in more ways than ever. All-fiber internet to your South Hadley home lets you make the most of it.</p>
-          <a href="#"> <p>More about gig speed internet &rarr;</p> </a>
+          <p class="more-info"><a href="#">More about gig speed internet &rarr;</a></p>
         </div>
         <div class="box3">
           <img src="img/location-map-icon.png" alt="location on a map icon">
           <h2>South Hadley Is Our Home, Too</h2>
           <p>FiberSonic is powered by SHELD, the public power utility that's been accountable to local families and businesses for generations. We are literally built to serve you; shareholder profit has not influence on us.</p>
-          <a href="#"><p>More about local commitment &rarr;</p></a>
+          <p class="more-info"><a href="#">More about local commitment &rarr;</a></p>
         </div>
       </div>
     </section><!-- end .features section -->
@@ -86,12 +87,12 @@
     <section class="blurb">
       <div class="content-wrapper">
         <p class="blurb-text">Get the maximum internet speeds and connectivity for a price that won’t max out your budget: residential gig-speed internet for just $74.95/month!</p>
-        <a href="#">
-          <button type="button" name="show-interest-today" class="left-btn">Show Interest Today</button>
-        </a>
-        <a href="#">
-          <button type="button" name="show-interest-today-icon" class="right-btn"> <img src="img/pill-btn-logo.png" alt="small lightning bolt logo"> </button>
-        </a>
+        <div class="pill-btn">
+          <ul>
+            <li class="left-btn"><a href="#">Show Interest Today</a> </li>
+            <li class="right-btn"><a href="#"><img src="img/pill-btn-logo.png" alt="small lightning bolt logo"></a></li>
+          </ul>
+        </div><!-- end of .pill-btn -->
       </div>
     </section><!-- end .blurb section -->
 
@@ -134,7 +135,7 @@
             <img src="img/phone-icon-white.png" alt="phone icon"><p>(413) 536-1050</p>
           </a>
           <a href="#">
-            <img src="img/location-icon.png" alt="locatiob icon"><p>85 Main Street, South Hadley, MA 01075</p>
+            <img src="img/location-icon.png" alt="location icon"><p>85 Main Street, South Hadley, MA 01075</p>
           </a>
         </address>
         <div class="useful-links">
@@ -173,7 +174,9 @@
         <p>&#8743;</p>
       </div>
     </div>
-  </footer>
+  </footer><!-- end of footer -->
+
+
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
