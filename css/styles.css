@@ -115,38 +115,164 @@ textarea {
   font-family:'asap-bold';
   src: url(../fonts/Asap-bold.ttf);
 }
-/*-------------------------Base Header - Footer Styles----------------*/
-header,
-footer {
-  display: flex;
+/*----------------------Base Font Styles----------------------------------*/
+body {
+  font-size: 16px;
 }
-/*-------------------------header Styles -------------------------------*/
+
+/*-------------------------Base Image styles----------------------------*/
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+/*----------------------Base Header and Footer Styles-------------------------*/
+header, footer {
+  width: 100%;
+}
+/*-------------------------------Header Styles -------------------------------*/
+
+
 header .content-wrapper {
-  display:flex;
+  /*flex styles*/
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row nowrap;
+  width: 100%;
+
+}
+
+header .main-logo {
+margin: 0px;
+padding: 20px;
+}
+
+.main-logo img {
+  width: 100%;
+}
+
+
+/* Nav styles */
+header .nav {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: row nowrap;
+width: 100%;
+
 }
 
 .nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row nowrap;
+display: flex;
+justify-content: space-around;
+align-items: stretch;
+flex-flow: row nowrap;
+margin: 0px;
 }
-/*---------------------------- hero styles ------------------------------*/
+
+.nav ul li {
+  list-style: none;
+  padding: 10px;
+
+
+}
+
+
+.nav ul li figure {
+  margin: 0px;
+}
+
+.nav ul li figure a img {
+  width: 100%;
+}
+
+/*---------------------------------Hero Styles -------------------------------*/
+.hero {
+
+}
+
+.hero img {
+
+}
+
 .hero .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column nowrap
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 630px;
+  background: #727478 url("../img/small-father-son-bonding.png") center no-repeat;
+  background-size: cover;
+
 }
 
 .main-content {
   display: flex;
   justify-content: center;
-  align: center;
+  align-items: center;
   flex-flow: row nowrap;
+  align-content: flex-start;
+  padding: 175px 125px 80px 125px;
+  width: 75%;
+
+  /*font-styles*/
+
+}
+
+.main-content figure {
+  margin: 0px;
+
+}
+
+.main-content figure img {
+  width: 100%;
+}
+.hero-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+
+  align-content: center;
+  font-size: 1.5em;
+  padding: 30px;
+}
+
+.hero-img {
+
+}
+
+.hero-text p {
+  font-family: gilroy-light;
+  font-size: 2rem;
+
+  color: #fff;
+  margin-bottom: 0px;
+
+}
+
+.hero-text h1 {
+  font-family: gilroy-bold;
+  font-size: 2.7rem;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+/*--.pill-btn styles --NOTE: both of large CTA buttons on this site use these
+stylings------------*/
+.pill-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  margin: auto;
+  padding-bottom: 155px;
+
+
 }
 
 .pill-btn ul {
@@ -156,116 +282,419 @@ header .content-wrapper {
   flex-flow: row nowrap;
 }
 
-/*----------------------- features styles -------------------------*/
+.pill-btn ul li {
+  list-style: none;
+
+}
+
+.left-btn {
+  background-color: #fff;
+  padding: 5px 30px;
+  border-radius: 50px 0 0 50px;
+  font-family: gilroy-bold;
+  font-size: .75rem;
+  color: #1cadec;
+}
+/* link styles */
+.left-btn a:link {
+  color: #1cadec;
+}
+
+.left-btn a:visited {
+  color: #1cadec;
+}
+
+.left-btn a:hover {
+  color: #1cadec;
+}
+
+.left-btn a:active {
+  color: #1cadec;
+}
+
+.right-btn {
+  background-color: #1cadec;
+  padding: 2px 30px;
+  border-radius: 0 50px 50px 0;
+}
+
+.right-btn img {
+
+}
+
+/*------------------------------- Features Styles -----------------------------*/
+.features {
+  width: 100%;
+  font-size: 1em;
+}
+
 .features .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
+  width: 100%;
+  padding: 60px 25px;
+  background-color: #1cadec;
+  /*font styles*/
+  color: #fff;
 
 }
 
+/* General box styles */
 .box1, .box2, .box3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
+  text-align: center;
 }
 
-.box1, .box2, .box3 figure{
-
-}
-
-.box1, .box2, .box3 img {
+.box1 {
 
 }
 
-.box1, .box2, .box3 h2 {
+.box1 figure {
+  margin: 0px;
+
+}
+.box1 img {
+  margin-bottom: 25px;
+  width: 20%;
 
 }
 
-.box1, .box2, .box3 p {
+.box1 h2 {
+  margin-bottom: 20px;
+  font-family: gilroy-bold;
+
+  font-size: 1.3rem;
+}
+
+.box1 p {
+  margin-bottom: 25px;
+  font-family: asap-regular;
+  font-weight: 100;
+  font-size: .75rem;
+}
+
+.box1 .more-info {
+ margin-bottom: 30px;
+ font-family: gilroy-bold;
+ font-size: .75rem;
+}
+
+.box2 {
 
 }
 
-.more-info {
+.box2 figure {
+  margin: 0px;
+}
+
+.box2 img {
+ margin-top: 30px;
+ margin-bottom: 25px;
+ width: 50%;
+}
+
+.box2 h2 {
+  margin-bottom: 20px;
+  font-family: gilroy-bold;
+  font-size: 1.3rem;
+}
+
+.box2 p {
+  margin-bottom: 35px;
+  font-family: asap-regular;
+  font-size: .75rem;
+}
+
+.box2 .more-info {
+  margin-bottom: 30px;
+  font-family: gilroy-bold;
+  font-size: .75rem;
+}
+
+.box3 {
 
 }
 
-/*----------------------------- blurb styles ----------------------*/
+.box3 figure {
+  margin: 0px;
+}
+.box3 img {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  width: 50%;
+}
+
+.box3 h2 {
+  margin-bottom: 20px;
+  font-family: gilroy-bold;
+  font-size: 1.5rem;
+}
+
+.box3 p {
+  margin-bottom: 35px;
+  font-family: asap-regular;
+  font-weight: 100;
+  font-size: .75rem;
+}
+
+.box3 .more-info {
+  margin-bottom: 20px;
+  font-family: gilroy-bold;
+  font-size: .75rem;
+}
+
+/* link styles */
+.more-info a:link {
+  color: #fff;
+}
+
+.more-info a:visited {
+  color: #fff;
+}
+
+.more-info a:hover {
+  color: #fff;
+}
+
+.more-info a:active {
+  color: #fff;
+}
+/*------------------------------- Blurb Styles -----------------------------*/
+.blurb {
+  width:  100%;
+}
+
 .blurb .content-wrapper {
+  background-color: #f7f7f7;
+  background-image: url('../img/blurb-dots.png');
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
+  width: 100%;
+  padding: 60px 45px;
 }
 
-/*---------------------- about styles --------------------------*/
+.blurb-text {
+  text-align: center;
+  margin-bottom: 80px;
+  max-width: 635px;
+  min-width: ;
+  /*font styles*/
+  font-family: gilroy-light;
+  font-size: 2em;
+}
+
+/*this might be redundant code CHECK THIS OUT LATER!----*/
+.blurb .pill-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  padding-bottom: 5px;
+
+
+}
+
+.pill-btn ul {
+
+}
+
+.pill-btn ul li {
+
+}
+
+.left-btn {
+
+}
+
+.right-btn {
+
+}
+
+/*end of redundant code*/
+/*------------------------------- About Styles -----------------------------*/
+.about {
+ width: 100%;
+}
+
 .about .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
+  width: 100%;
+
+}
+
+.about-1. .about-2, .about-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.about-1 img {
+  width: 100%;
+}
+
+.about-2 img {
+  width: 100%;
+}
+
+.about-3 img {
+  width: 100%;
 }
 
 .about-description {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
+  padding: 45px 45px;
+  width: 100%;
 }
 
-/*-------------------- contact styles --------------------*/
+.about-description h3 {
+
+  margin-bottom: 15px;
+}
+
+.about-description p {
+
+}
+
+
+
+/*------------------------------- Contact Styles -----------------------------*/
+.contact {
+  width: 100%;
+}
+
 .contact .content-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-flow: column nowrap;
+  width: 100%;
+  height: 770px;
+  padding: 60px 45px;
+  background: #727478 url("../img/lightning-bg.png") no-repeat ;
+}
+
+.contact h4 {
+
+}
+
+.contact h5 {
+
 }
 
 address {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-flow: column nowrap;
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-start;
+ flex-flow: column nowrap;
+}
+
+address a {
+
+}
+
+address img{
+ max-width:25px;
+
+}
+
+address p {
+
 }
 
 .useful-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
+
+}
+
+.useful-links p {
+
+}
+
+.useful-links p a {
+
 }
 
 .logo-and-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row nowrap;
-}
-
-.sheld {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-flow: column nowrap;
-}
-
-/*----------------------- footer styles ------------------*/
-
-footer .content-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row nowrap;
 }
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #727478;
+  border-radius: 50px;
+}
+
+.fontawesome-icon {
+
+}
+
+.sheld {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.sheld figure {
+  margin: 0px;
+}
+.sheld img {
+  width: 50%;
+}
+
+
+
+
+/*-------------------------------Footer Styles -----------------------------*/
+
+footer {
+  width: 100%;
+}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  width: 100%;
+  padding: 20px 45px;
+  background-color: #222;
+  color: #fff;
+}
 
 .footer-text {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+}
+
+.footer-text p {
+  font-family: asap-regular;
+  font-size: .5rem;
 }
 
 .footer-text ul {
@@ -273,13 +702,30 @@ footer .content-wrapper {
   justify-content: flex-start;
   align-items: flex-start;
   flex-flow: row nowrap;
+
 }
 
+.footer-text li {
+  list-style: none;
+  font-family asap-regular;
+  font-size: .5rem;
 
+}
 
+.back-to-top {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 
+.back-to-top p {
+  color: #222;
 
-
+}
 
 
 

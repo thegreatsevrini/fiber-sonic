@@ -27,18 +27,17 @@
   <header>
     <div class="content-wrapper">
       <figure class="main-logo">
-        <img src="img/logo.png" alt="FiberSonic logo">
+        <a href="#">
+          <img src="img/logo.png" alt="FiberSonic logo">
+        </a>
       </figure>
       <nav class="nav">
-        <a href="#">
-          <img src="img/phone-icon-blue.png" alt="phone icon">
-        </a>
-        <a href="#">
-          <img src="img/mail-icon-blue.png" alt="email icon">
-        </a>
-        <a href="#">
-          <img src="img/hamburger-btn.png" alt="dropdown menu button">
-        </a>
+        <ul>
+          <li><figure><a href="#"><img src="img/phone-icon-blue.png" alt="phone icon"></a></figure></li>
+          <li><figure><a href="#"><img src="img/mail-icon-blue.png" alt="email icon"></a></figure></li>
+          <li><figure><a href="#"><img src="img/hamburger-btn.png" alt="dropdown menu button"></a></figure></li>
+        </ul>
+
       </nav>
     </div>
   </header>
@@ -46,12 +45,15 @@
   <main>
     <section class="hero">
       <div class="content-wrapper">
-        <img src="img/hero-logo-big.png" alt="FiberSonic's lightning bolt logo">
-        <div class="hero-text">
-          <p>Coming Soon:</p>
-          <h1>Homegrown GIG speed Internet</h1>
-        </div>
-
+        <div class="main-content">
+          <figure>
+            <img src="img/hero-logo-big.png" alt="FiberSonic's lightning bolt logo">
+          </figure>
+          <div class="hero-text">
+            <p>Coming Soon:</p>
+            <h1>Homegrown GIG speed Internet</h1>
+          </div>
+        </div><!-- end main-content -->
         <div class="pill-btn">
           <ul>
             <li class="left-btn"><a href="#">Show Interest Today</a> </li>
@@ -70,13 +72,17 @@
           <p class="more-info"><a href="#">More about chord cutting &rarr;</a></p>
         </div>
         <div class="box2">
-          <img src="img/lightbulb-icon.png" alt="Lightbulb icon">
+          <figure>
+            <img src="img/lightbulb-icon.png" alt="Lightbulb icon">
+          </figure>
           <h2>Our Homes Are Getting Smarter</h2>
           <p>From smart speakers to remote garage door controls to smart thermostats, we are connected to our home in more ways than ever. All-fiber internet to your South Hadley home lets you make the most of it.</p>
           <p class="more-info"><a href="#">More about gig speed internet &rarr;</a></p>
         </div>
         <div class="box3">
-          <img src="img/location-map-icon.png" alt="location on a map icon">
+          <figure>
+            <img src="img/location-map-icon.png" alt="location on a map icon">
+          </figure>
           <h2>South Hadley Is Our Home, Too</h2>
           <p>FiberSonic is powered by SHELD, the public power utility that's been accountable to local families and businesses for generations. We are literally built to serve you; shareholder profit has not influence on us.</p>
           <p class="more-info"><a href="#">More about local commitment &rarr;</a></p>
@@ -100,9 +106,9 @@
       <div class="content-wrapper">
         <div class="about-1">
           <img src="img/couple-laughing.png" alt="couple looking at phone laughing">
-            <div class="about-description">
-              <h3>Fiber lets you see your favorites in a wholte new light</h3>
-              <p>One major difference with fiber internet service is that you get the same high speeds for both uploads and downloads: sharing photos or other files has never been easier! And because your internet service doesn't share a copper wire with television signals, it's more reliable — not to mention faster. Take your online experiences to another level of speed and reliability.
+          <div class="about-description">
+            <h3>Fiber lets you see your favorites in a whole new light</h3>
+            <p>One major difference with fiber internet service is that you get the same high speeds for both uploads and downloads: sharing photos or other files has never been easier! And because your internet service doesn't share a copper wire with television signals, it's more reliable — not to mention faster. Take your online experiences to another level of speed and reliability.
               </p>
             </div>
           </div>
@@ -128,32 +134,33 @@
         <h4>FiberSonic, powered by SHELD</h4>
         <h5>Homegrown gig speed internet for South Hadley homes & businesses</h5>
         <address>
-          <a href="#">
-            <img src="img/mail-icon-white.png" alt="mail icon"><p>info@fibersonic.com</p>
-          </a>
-          <a href="#">
-            <img src="img/phone-icon-white.png" alt="phone icon"><p>(413) 536-1050</p>
-          </a>
-          <a href="#">
-            <img src="img/location-icon.png" alt="location icon"><p>85 Main Street, South Hadley, MA 01075</p>
-          </a>
+          <p><img src="img/mail-icon-white.png" alt="mail icon"><a href="#">info@fibersonic.com</a></p>
+          <p><img src="img/phone-icon-white.png" alt="phone icon"><a href="#">(413) 536-1050</a></p>
+          <p><img src="img/location-icon.png" alt="location icon"><a href="#">85 Main Street, South Hadley, MA 01075</a></p>
         </address>
         <div class="useful-links">
           <p>Useful Links</p>
           <p><a href="#">Contact<a> | <a href="#">FAQ</a></p>
         </div><!-- end of .useful-links -->
-        <div class="socials">
-          <div class="social-icon">
-            <p class="fontawesome-icon"></p>
-          </div>
-          <div class="social-icon">
-            <p class="fontawesome-icon"></p>
-          </div>
-        </div><!-- end of .socials -->
+        <div class="logo-and-social">
+          <div class="socials">
+            <div class="social-icon">
+              <p class="fontawesome-icon"></p>
+            </div>
+            <div class="social-icon">
+              <p class="fontawesome-icon"></p>
+            </div>
+          </div><!-- end of .socials -->
+
         <div class="sheld">
+          <figure class="fibersonic-tm">
           <img src="img/logo-tm.png" alt="trademarked FiberSonic logo">
+        </figure>
+      <figure>
           <img src="img/powered-by-sheld-logo.png" alt="Powered by Sheld">
-        </div>
+        </figure>
+      </div><!--end of .sheld -->
+      </div><!--end of logo and social-->
       </div><!-- end of .content-wrapper -->
     </section><!-- end of .contact -->
   </main><!-- main wrapper -->
